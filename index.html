@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Palladium Bank Loan Application</title>
+    <link rel="stylesheet" type="text/css" href="validation.css">
+  </head>
+
+  <body>
+
+    <form>
+      <h1>Loan Application</h1>
+
+      <fieldset>
+        <legend>Your Information</legend><br>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="first_name">
+
+        <label for="middlename">Middle Name:</label>
+        <input type="text" id="middlename" name="middle_name">
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="last_name"><br>
+
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="email">
+
+        <label for="phonenumb">Phone #:</label>
+        <input type="tel" id="phonenumb" name="phone"><br>
+
+        <label for="useraddress">Address:</label>
+        <input type="text" id="useraddress" name="address">
+
+        <label for="usercity">City:</label>
+        <input type="text" id="usercity" name="city">
+
+        <label for="userstate">State:</label>
+        <input type="text" id ="userstate" name="state">
+
+        <label for="userzip">Zip Code:</label>
+        <input type="number" min="1" max="99999" id="userzip" name="zipcode"><br>
+
+        <label for="linkedin">LinkedIn Profile URL:</label>
+        <input type="url" id="linkedin" name="linkedin">
+      </fieldset>
+
+      <fieldset>
+        <legend>Employment Information</legend><br>
+
+        <label for="employer">Employer:</label>
+        <input type="text" id="employer" name="employer"><br>
+
+        <label for="empaddress">Employer Address:</label>
+        <input type="text" id="empaddress" name="emp_address">
+
+        <label for="empcity">City:</label>
+        <input type="text" id="empcity" name="emp_city">
+
+        <label for="empstate">State:</label>
+        <input type="text" id="empstate" name="emp_state">
+
+        <label for="empzip">Zip Code:</label>
+        <input type="number" min="1" max="99999" id="empzip" name="emp_zip">
+      </fieldset>
+
+      <fieldset>
+        <legend>Type of Loan</legend>
+
+        <select name="loan">
+          <option value="commercial">Commercial</option>
+          <option value="realestate">Real Estate</option>
+          <option value="personal">Personal</option>
+          <option value="mortgage">Mortgage</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Amount to Borrow</legend>
+
+        <label for="loanamount">Amount:</label>
+        <input type="number" id="loanamount" name="loan_amount">
+      </fieldset>
+
+      <fieldset>
+        <legend>Loan Term Length</legend>
+
+        <input type="radio" id="years5" name="5years">
+          <label for="years5">5 Years</label><br>
+
+        <input type="radio" id="years10" name="10years">
+          <label for="years10">10 Years</label><br>
+
+        <input type="radio" id="years15" name="15years">
+          <label for="years15">15 Years</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Special Conditions</legend>
+
+        <input type="checkbox" id="downpayment" name="down_payment">
+          <label for="downpayent">Downpayment</label><br>
+
+        <input type="checkbox" id="outofstate" name="out_of_state">
+          <label for="outofstate">Out-of-State Resident</label><br>
+
+        <input type="checkbox" id="maritalstatus" name="marital_status">
+          <label for="maritalstatus">Married</label><br>
+
+        <input type="checkbox" id="cosign" name="co_sign">
+          <label for="cosign">Loan will have to be co-signed</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Comments</legend>
+
+        <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
+      </fieldset>
+
+  </body>
+
+<html>
